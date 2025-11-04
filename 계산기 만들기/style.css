@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+.calculator-container {
+    width: 300px;
+    border-radius: 25px;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding:50px 0 30px;
+}
+
+
+.window-button {
+  position: absolute; 
+  top: 15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px; 
+}
+
+
+.window-button button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+
+.close-btn { background-color: #ec6a5e; }
+.min-btn { background-color: #f4be4f; }
+.max-btn { background-color: #61c554; }
+
+
+.close-btn:hover, .min-btn:hover, .max-btn:hover {
+    background-color: #666;
+}
+
+
+.display {
+    width: 95%;
+    height: 100px;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+.display .history {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 2.0rem;
+    align-self: flex-end; 
+}
+
+
+.display .current {
+    font-size: xxx-large;
+    align-self: flex-end; 
+}
+
+
+.buttons {
+    width: 95%;
+    margin-top: 10px;
+    height: 330px;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    font-size: 2rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-auto-rows: 1fr; 
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.button {
+    background-color: rgb(121, 121, 121);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: 0.2s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.function{
+  background-color: rgb(151, 151, 151);
+}
+
+
+.function:hover{
+    background-color: rgb(184, 184, 184);
+}
+
+
+.function:active{
+    background-color: rgb(208, 208, 210);
+}
+
+
+.zero {
+    grid-column: span 2; 
+    border-radius: 25px; 
+    height: 100%;
+}
+
+
+.number:hover {
+    background-color: #666;
+}
+
+
+.number:active {
+    background-color: rgb(72, 72, 74);
+}
+
+
+.operator {
+    background-color: #f5913e;
+}
+
+
+.operator:hover {
+    background-color: #ffb74d;
+}
+
+
+.operator:active {
+    background-color:  #fed4b1;
+}
